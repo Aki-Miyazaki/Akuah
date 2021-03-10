@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>思い出の湧き水 〜八重瀬町〜</title>
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/css/index.css">
+        <!-- ここからjQyeryプラグインの前半 -->
+        <link rel="stylesheet" href="css/bookblock.css">
+        <link rel="stylesheet" href="css/demo1.css">
+        <script src="JS/modernizr.custom.js"></script>
+        <!-- ここまでjQyeryプラグインの前半 -->
 	    <!-- ここからJS -->
 		<script src="./js/jquery-3.5.1.min.js"></script>    <!-- jQuery -->
-		<script src="./js/common.js"></script>  <!-- Javascript  -->
+		<script src="./JS/common.js"></script>  <!-- Javascript  -->
 </head>
 <body> 
-     <div>
-         <img src="img/1_hyoushi.png" alt="思い出の湧き水 〜八重瀬町〜">
-         <img src="img/2-3.png" alt="あいうえお">
-     </div>
+
+     <a href="javascript:twitText()"><img src="http://www.shurey.com/img/twitter-a.png" alt="Send to Twitter" width="61" height="23"></a>
+
+     <div class="main clearfix">
+        <div class="bb-custom-wrapper">
+            <div id="bb-bookblock" class="bb-bookblock">
+                <div class="bb-item">
+                    <img src="img/1_hyoushi.png" alt="image01"/>
+                </div>
+                <div class="bb-item">
+                    <img src="img/2-3.png" alt="image02"/>
+                </div>
+                <div class="bb-item">
+                    <img src="img/4-5.png" alt="image03"/>
+                </div>
+                <div class="bb-item">
+                    <img src="画像パス" alt="image04"/>
+                </div>
+                <div class="bb-item">
+                    <img src="画像パス" alt="image05"/>
+                </div>
+           </div>
+            <nav>
+                <span id="bb-nav-first" class="bb-custom-icon bb-custom-icon-first">最初のページ</span>
+                <span id="bb-nav-prev" class="bb-custom-icon bb-custom-icon-arrow-left">前のページ</span>
+                <span id="bb-nav-next" class="bb-custom-icon bb-custom-icon-arrow-right">次のページ</span>
+                <span id="bb-nav-last" class="bb-custom-icon bb-custom-icon-last">最後のページ</span>
+            </nav>
+        </div>
+    </div> 
+ 
+
+        <!-- ここからjQyeryプラグインの後半 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquerypp.custom.js"></script>
+        <script src="js/jquery.bookblock.js"></script>
+        <!-- ここまでjQyeryプラグインの後半 -->
 </body>
 </html>
