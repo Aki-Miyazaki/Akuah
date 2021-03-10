@@ -30,36 +30,63 @@ $('#bb-bookblock').bookblock({
 	}
 });
 
+//ーーーーーーーーここからページをめくるボタン４つーーーーーーーー
 
-
-//「#bb-nav-next」がクリックされたら、、、
-$( '#bb-nav-next' ).on( 'click', function() {
-	//「#bb-blocblock」が次のページになる
-	$('#bb-bookblock').bookblock('next');
-	// 出る
-	return false;
-});
-//「#bb-nav-prev」がクリックされたら、、、
-$('#bb-nav-prev').on( 'click', function() {
-	//「#bb-blocblock」が前のページになる
-	$( '#bb-bookblock' ).bookblock('prev');
-	// 出る
-	return false;
-});
-//「#bb-nav-first」がクリックされたら、、、
+//最初のページ：「#bb-nav-first」がクリックされたら、、、
 $('#bb-nav-first').on( 'click', function() {
 	//「#bb-blocblock」が最初のページになる
 	$( '#bb-bookblock' ).bookblock('first');
 	// 出る
 	return false;
 });
-//「#bb-nav-last」がクリックされたら、、、
+
+
+//前のページ：「#bb-nav-prev」がクリックされたら、、、
+$('#bb-nav-prev').on( 'click', function() {
+	//「#bb-blocblock」が前のページになる
+	$( '#bb-bookblock' ).bookblock('prev');
+	// 出る
+	return false;
+});
+
+
+//次のページ：「#bb-nav-next」がクリックされたら、、、
+$( '#bb-nav-next' ).on( 'click', function() {
+	//「#bb-blocblock」が次のページになる
+	$('#bb-bookblock').bookblock('next');
+	// 出る
+	return false;
+});
+
+
+//最後のページ：「#bb-nav-last」がクリックされたら、、、
 $('#bb-nav-last').on( 'click', function() {
 	//「#bb-blocblock」が最後のページになる
 	$( '#bb-bookblock' ).bookblock('last');
 	// 出る
 	return false;
 });
+
+//ーーーーーーーーここまでページをめくるボタン４つーーーーーーーー
+
+//ーーーーーーーーここからTwitterに飛ばすリンクーーーーーーーー
+function twitText() {
+	var s, url;
+	s = "JSのコードからTwitterを起動！";
+	url = document.location.href;
+	
+	if (s != "") {
+		if (s.length > 140) {
+			//文字数制限
+			alert("テキストが140字を超えています");
+		} else {
+			//投稿画面を開く
+			url = "http://twitter.com/share?url=" + escape(url) + "&text=" + s;
+			window.open(url,"_blank","width=600,height=300");
+		}
+	}
+}
+//ーーーーーーーーここまでTwitterに飛ばすリンクーーーーーーーー
 
 
 

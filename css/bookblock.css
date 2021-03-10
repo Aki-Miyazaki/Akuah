@@ -1,3 +1,4 @@
+/* /ーーーーーここからbookblock.cssの元のコードーーーーー/ */
 .bb-bookblock {
 	width: 400px;
 	height: 300px;
@@ -7,7 +8,7 @@
 	-webkit-perspective: 1300px;
 	perspective: 1300px;
 	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .bb-page {
@@ -161,8 +162,8 @@
 }
 
 .bb-item {
-	width: 100%;
-	height: 100%;
+	width: 50%;
+	height: 50%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -181,7 +182,7 @@
 	display: block;
 	position: relative;
 }
-
+/* /ーーーーーここまでbookblock.cssの元のコードーーーーー/ */
 
 /*デフォルトは「width: 400px, height: 300px;」*/
 #bb-bookblock {
@@ -202,3 +203,70 @@ nav {
 	text-decoration: none;
 }
  
+
+
+
+
+
+
+
+
+
+
+
+/* フッターメニューCSSここから */
+	/*メニューをページ下部に固定*/
+	#sp-fixed-menu{
+		position: fixed;
+		width: 100%;
+		bottom: 0px;
+		font-size: 0;
+		opacity: 0.9;
+		z-index: 99;
+	}
+	
+	/*メニューを横並びにする*/
+	#sp-fixed-menu ul{
+		display: flex;
+		list-style: none;
+		padding:0;
+		margin:0;
+		width:100%;
+	}
+	
+	#sp-fixed-menu li{
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		padding:0;
+		margin:0;
+		font-size: 14px;
+		font-weight: 900;
+		border-right: 1px solid #fff;
+	}
+
+	/*ボタンを調整*/
+	#sp-fixed-menu li a{
+		color: #74645C;
+		text-align: center;
+		display:block;
+		width: 100%;
+		padding:20px;
+	}
+	
+	/*きょうのあなたは？ 背景色*/
+	#sp-fixed-menu li:first-of-type{
+		background: #EEF2EF;
+	}
+
+	/*木の成長を見る 背景色*/
+	#sp-fixed-menu li:nth-of-type(2){
+		background: #EEF2EF;
+	}
+	
+	/*ログアウト 背景色*/
+	#sp-fixed-menu li:last-of-type{
+		background: #EEF2EF;
+	}
+
+  /* フッターメニューここまで */
