@@ -181,3 +181,24 @@
 	display: block;
 	position: relative;
 }
+
+
+/*デフォルトは「width: 400px, height: 300px;」*/
+#bb-bookblock {
+	width: 640px;
+	height: 425px;
+}
+nav {
+	text-align: center;
+	margin-top: 20px;
+}
+/*ボタンのカスタマイズ*/
+.bb-custom-icon {
+	margin: 10px;
+	padding: 10px;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+ 
